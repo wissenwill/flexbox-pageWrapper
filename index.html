@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Flexbox PageWrapper</title>
+    <meta name="description" content="Flexbox PageWrapper">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      *, *:before, *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .flexbox-parent {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+      }
+
+      .flexbox-item {
+        padding: 10px;
+      }
+
+      .flexbox-item-grow {
+        flex: 1;
+      }
+
+      .flexbox-item.header {
+        background: lightgrey;
+      }
+
+      .flexbox-item.footer {
+        background: lightgrey;
+      }
+
+      .flexbox-item.content {
+        background: darkgrey;  
+      }
+
+      .fill-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+      }
+      
+      .fill-area-content {
+        background: darkgrey;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexbox-parent">
+
+      <div class="flexbox-item header">
+        Header
+      </div>
+
+      <div class="flexbox-item fill-area content flexbox-item-grow">
+        <div class="fill-area-content flexbox-item-grow">
+          Content...
+        </div>
+      </div>
+
+      <div class="flexbox-item footer">
+        Footer
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>
